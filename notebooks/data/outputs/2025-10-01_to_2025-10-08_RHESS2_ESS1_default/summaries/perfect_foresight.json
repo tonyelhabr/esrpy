@@ -1,0 +1,13 @@
+{
+  "total_pnl": 31540.0,
+  "total_revenue": 31540.0,
+  "discharge_revenue": 40820.55,
+  "charge_cost": -9280.55,
+  "total_cycles": 10.36,
+  "num_intervals": 2010,
+  "num_awarded": 463,
+  "award_rate": 0.23,
+  "avg_pnl_per_interval": 15.69,
+  "total_charged_mwh": 537.47,
+  "total_discharged_mwh": 498.33
+}
