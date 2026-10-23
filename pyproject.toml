@@ -26,3 +26,14 @@ build-backend = "hatchling.build"
 
 [tool.hatch.build.targets.wheel]
 packages = ["src/esrpy"]
+
+[tool.uv]
+required-version = ">=0.13.4"
+# Security floors for the eMudhra CA compromise.
+constraint-dependencies = [
+    "certifi>=2026.10.19",
+    "pip>=26.2.2",
+    "sigstore>=4.5.1",
+]
+# Hold certifi at the fix release. Later releases are inside the 7-day dependency window.
+exclude-newer-package = { certifi = "2026-10-21T00:00:00Z" }
